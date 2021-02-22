@@ -1,8 +1,13 @@
 name: Check code when push
+
 on:
   push:
     branches:
       - "main"
+  pull_request:
+    branches:
+      - "main"
+
 jobs:
   check-code:
     name: Check code
